@@ -20,9 +20,16 @@ Name is ... <!-- insert biography -->
  
 Find more information on their <!-- update pronouns--> [website](https://).
 
-<!-- ### Advisor -->
+### Advisor
 
-<!-- Uncomment this section title and add a #### Name subsection if your team appointed an advisor. -->
+#### Massimiliano Di Luca
+
+<img alt="Max's picture" src="images/portraits/Max.jpg" width="100px" height="auto"/>
+
+Max is Senior Lecturer at the University of Birmingham in the Centre for Computational Neuroscience and Cognitive Robotics. He performs both fundamental and applied research to investigate how humans process multisensory stimuli, with an accent on understanding the temporal, dynamic, and interactive nature of perception. He uses psychophysical experiments and neuroimaging methods to capture how the brain employs multiple sources of sensory information and combines them with assumptions, predictions, and information obtained through active exploration.
+
+Find more information on their [website](https://massimilianodiluca.info).
+
 
 ### Chairs
 
