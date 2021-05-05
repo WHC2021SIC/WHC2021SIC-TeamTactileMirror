@@ -20,6 +20,18 @@ Name is ... <!-- insert biography -->
  
 Find more information on their <!-- update pronouns--> [website](https://).
 
+### Tactile Mirror
+
+<!-- For each team member, duplicate this following subsection and update Name, biography, pronouns and website. Please store pictures under images/portraits/ and use only Name in CamelCase for filenames. -->
+
+#### Diar Abdlkarim
+
+<img alt="Diar's picture" src="images/portraits/diar.jpg" width="100px" height="auto"/>
+
+Diar is a PhD student at the University of Bimirngham working on upper limb rehabilitation following nerve injury using virtual reality training. 
+ 
+Find more information on his [website](https://diarkarim.com).
+
 ### Advisor
 
 #### Massimiliano Di Luca
