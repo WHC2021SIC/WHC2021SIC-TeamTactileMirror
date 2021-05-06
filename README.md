@@ -12,7 +12,7 @@ https://2021.worldhaptics.org/sic/
 
 <!-- For each team member, duplicate this following subsection and update Name, biography, pronouns and website. Please store pictures under images/portraits/ and use only Name in CamelCase for filenames. -->
 
-#### Namw
+#### Name
 
 <img alt="Name's picture" src="images/portraits/Name.jpg" width="100px" height="auto"/>
 
