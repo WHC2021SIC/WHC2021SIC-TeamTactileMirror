@@ -12,7 +12,7 @@ https://2021.worldhaptics.org/sic/
 
 <!-- For each team member, duplicate this following subsection and update Name, biography, pronouns and website. Please store pictures under images/portraits/ and use only Name in CamelCase for filenames. -->
 
-#### Name
+#### Namw
 
 <img alt="Name's picture" src="images/portraits/Name.jpg" width="100px" height="auto"/>
 
@@ -31,6 +31,13 @@ Find more information on their <!-- update pronouns--> [website](https://).
 Diar is a PhD student at the University of Bimirngham working on upper limb rehabilitation following nerve injury using virtual reality training. 
  
 Find more information on his [website](https://diarkarim.com).
+
+#### Davide Deflorio
+
+<img alt="Davide's picture" src="images/portraits/davide.jpg" width="100px" height="auto"/>
+
+Davide is a PhD student at the University of Bimirngham working on sensory mechanisms of tactile perception with psychophysics and computational modeling.
+ 
 
 ### Advisor
 
