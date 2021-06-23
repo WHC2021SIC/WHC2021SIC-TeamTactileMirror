@@ -31,22 +31,22 @@ GPIO.setup(vt_pin,GPIO.OUT)
 
 pi_pwm = GPIO.PWM(vt_pin,freq) #create PWM instance first LRA (left)
 pi_pwm.start(duty)             #start PWM 
-pi_pwm.ChangeDutyCycle(duty) #provide duty cycle 
+pi_pwm.ChangeDutyCycle(duty)   #provide duty cycle 
 
 GPIO.setwarnings(False)         #disable warnings
 GPIO.setmode(GPIO.BOARD)        #set pin numbering system
 GPIO.setup(vt_pin2,GPIO.OUT)
 
 pi_pwm2 = GPIO.PWM(vt_pin2,freq) #create PWM instance for second LRA (right)
-pi_pwm2.start(duty)             #start PWM 
-pi_pwm2.ChangeDutyCycle(duty) #provide duty cycle 
+pi_pwm2.start(duty)              #start PWM 
+pi_pwm2.ChangeDutyCycle(duty)    #provide duty cycle 
     
 # read time to set condition for the readings
 toc = 0
 tic = time.time()
 
 prevRMS = []
-prevRoll = []
+roll_out = []
 
 while True:
     
@@ -61,13 +61,13 @@ while True:
       roll = struct.unpack('f', rollPacked)
     
       prevRMS.append(rms)
-      rollout = np.array(roll)
+      roll_out = np.array(roll)
       
       if len(prevRMS) == 60: # every 60 readings (~120 ms)
         
-         l = [item for sublist in prevRMS for item in sublist]
+         rms_out = [item for sublist in prevRMS for item in sublist]
 
-         peaks, _ = find_peaks(l, height=1.13)
+         peaks, _ = find_peaks(rms_out, height=1.13)
 
          freq = len(peaks)/0.02
 
@@ -76,13 +76,13 @@ while True:
          elif freq >= 800:
              freq = 800
      
-         # print(freq)
+         # print(freq) # uncomment to print out the output frequency
         
-         if rollout > 0:
+         if roll_out > 0:
              pi_pwm.ChangeFrequency(freq)
              time.sleep(0.05)
              pi_pwm2.ChangeFrequency(freq)
-         elif rollout < 0:
+         elif roll_out < 0:
              
              pi_pwm2.ChangeFrequency(freq)
              time.sleep(0.05)
