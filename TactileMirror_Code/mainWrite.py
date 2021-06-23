@@ -20,8 +20,8 @@ sock2.bind((UDP_IP, UDP_PORT2))
 
 
 # set up PWM channels
-vt_pin = 12             # PWM pin connected to LRA1
-vt_pin2 = 32            # PWM pin connected to LRA2
+vt_pin = 12             # PWM pin connected to LRA1 (left)
+vt_pin2 = 32            # PWM pin connected to LRA2 (right)
 freq = 10  # baseline frequency
 duty = 45  # duty
 
