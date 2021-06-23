@@ -82,5 +82,4 @@ while True:
         
         sock.sendto(rmsPacked, (UDP_IP, UDP_PORT))
         sock2.sendto(rollPacked, (UDP_IP, UDP_PORT2))
-        #print(roll)
 
