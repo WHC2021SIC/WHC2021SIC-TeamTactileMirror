@@ -29,17 +29,17 @@ GPIO.setwarnings(False)         #disable warnings
 GPIO.setmode(GPIO.BOARD)        #set pin numbering system
 GPIO.setup(vt_pin,GPIO.OUT)
 
-pi_pwm = GPIO.PWM(vt_pin,freq) #create PWM instance first LRA
+pi_pwm = GPIO.PWM(vt_pin,freq) #create PWM instance first LRA (left)
 pi_pwm.start(duty)             #start PWM 
-pi_pwm.ChangeDutyCycle(duty) #provide duty cycle in the range 0-100
+pi_pwm.ChangeDutyCycle(duty) #provide duty cycle 
 
 GPIO.setwarnings(False)         #disable warnings
 GPIO.setmode(GPIO.BOARD)        #set pin numbering system
 GPIO.setup(vt_pin2,GPIO.OUT)
 
-pi_pwm2 = GPIO.PWM(vt_pin2,freq) #create PWM instance for second LRA
+pi_pwm2 = GPIO.PWM(vt_pin2,freq) #create PWM instance for second LRA (right)
 pi_pwm2.start(duty)             #start PWM 
-pi_pwm2.ChangeDutyCycle(duty) #provide duty cycle in the range 0-100
+pi_pwm2.ChangeDutyCycle(duty) #provide duty cycle 
     
 # read time to set condition for the readings
 toc = 0
@@ -71,7 +71,7 @@ while True:
 
          freq = len(peaks)/0.02
 
-         if freq <= 100:
+         if freq < 100:
              freq = 10
      
          
