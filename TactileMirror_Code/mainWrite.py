@@ -63,7 +63,7 @@ while True:
       prevRMS.append(rms)
       rollout = np.array(roll)
       
-      if len(prevRMS) == 30: # every 60 ms
+      if len(prevRMS) == 30: # every 30 readings (~60 ms)
         
          l = [item for sublist in prevRMS for item in sublist]
 
