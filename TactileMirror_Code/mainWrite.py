@@ -63,16 +63,18 @@ while True:
       prevRMS.append(rms)
       rollout = np.array(roll)
       
-      if len(prevRMS) == 30: # every 30 readings (~60 ms)
+      if len(prevRMS) == 60: # every 60 readings (~120 ms)
         
          l = [item for sublist in prevRMS for item in sublist]
 
-         peaks, _ = find_peaks(l, height=1.15)
+         peaks, _ = find_peaks(l, height=1.13)
 
          freq = len(peaks)/0.02
 
-         if freq < 100:
+         if freq <= 99:
              freq = 10
+         elif freq >= 800:
+             freq = 800
      
          # print(freq)
         
