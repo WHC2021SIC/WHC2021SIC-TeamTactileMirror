@@ -74,7 +74,7 @@ while True:
          if freq < 100:
              freq = 10
      
-         
+         # print(freq)
         
          if rollout > 0:
              pi_pwm.ChangeFrequency(freq)
