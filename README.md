@@ -113,20 +113,25 @@ Once this documentation becomes very comprehensive, the main file can be split i
 
 #### Hardware
 
-<!-- Describe your hardware components -->
+- Raspberry Pi 4 x 1
+- Qwiic Hat for Raspberry Pi x 1
+- MMA 8452Q Accelerometer x 1
+- LRAs x 2
+- TDA2030A Audio Amplifier module x 2 (other 18W audio amplifier module will work as well)
+- 2 channels power supply (20W per channel)
+
+<img alt="Wiring diagram" src="images/diagram.png" width="100px" height="auto"/>
+
 
 ##### Sensors wiring
+1. Connect the piHat to Raspberry Pi
+2. Connect the accelerometer to the piHat with Qwiic cable
+3. Connect the audio amplifiers to power supply (5 or 12 V)
+4. Connect the input of the audio amplifiers to the GPIO and GND pins on rpi 
+—> the amp for the left LRA is connected to pin 12, the amp for the right LRA to pin 32
+5. Connect the LRAs to the amplifiers output
 
-<!-- Feel free to remove or adapt the following explanation once you have understood its potential implications for your project. -->
 
-We use the SparkFun Qwiic system to rapidly and remotely prototype sensors without much soldering. Qwiic uses the I2C communication protocol with addresses assigned per board model.
-Our Qwiic-based architectures may require:
-- 1 Qwiic MUX I2C multiplexer board per group identical sensor/board model (example: needed by 2 flex finger boards in the figures below)
-- 1 Qwiic ADC board per group of 4 sensors that are not implemented as Qwiic boards (example: needed by 4 FSRs sensors in the figures below)
-
-<!-- Adapt this sensor architecture, covering all possible sensors accross all teams, to your team. -->
-
-![Sensor Configuration](images/architecture/sensor-configuration.svg)
 
 Made with [drawio-desktop](https://github.com/jgraph/drawio-desktop/) (online version: [diagrams.net](https://www.diagrams.net/)).
 
@@ -134,8 +139,22 @@ Made with [drawio-desktop](https://github.com/jgraph/drawio-desktop/) (online ve
 
 #### Software
 
-<!-- Describe your software components -->
+Libraries to install:  
 
+smbus2
+numpy
+socket
+struct
+
+
+Running instructions:
+
+(Softwares are written in Python 3)
+1. Open file ‘mainRead.py’ in Thonny IDE (or any other IDE)
+2. Run ‘mainRead.py’
+3. Open LXTerminal
+4. Go to the folder of ‘mainWrite.py’
+5. Type ‘python3 mainWrite.py’ and press enter to run ‘mainWrite.py’
 
 ## Acknowledgements
 
