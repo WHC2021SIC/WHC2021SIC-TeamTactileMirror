@@ -14,11 +14,6 @@ https://2021.worldhaptics.org/sic/
 
 #### Name
 
-<img alt="Name's picture" src="images/portraits/Name.jpg" width="100px" height="auto"/>
-
-Name is ... <!-- insert biography -->
- 
-Find more information on their <!-- update pronouns--> [website](https://).
 
 ### Tactile Mirror
 
@@ -120,7 +115,7 @@ Once this documentation becomes very comprehensive, the main file can be split i
 - TDA2030A Audio Amplifier module x 2 (other 18W audio amplifier module will work as well)
 - 2 channels power supply (20W per channel)
 
-<img alt="Wiring diagram" src="images/diagram.png" width="100px" height="auto"/>
+<img alt="Wiring diagram" src="images/diagram.png" width="400px" height="auto"/>
 
 
 ##### Sensors wiring
