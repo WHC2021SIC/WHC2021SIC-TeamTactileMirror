@@ -8,15 +8,9 @@ https://2021.worldhaptics.org/sic/
 
 ## Authors
 
-### Team
-
-<!-- For each team member, duplicate this following subsection and update Name, biography, pronouns and website. Please store pictures under images/portraits/ and use only Name in CamelCase for filenames. -->
-
-#### Name
-
-
 ### Tactile Mirror
 
+### Team
 <!-- For each team member, duplicate this following subsection and update Name, biography, pronouns and website. Please store pictures under images/portraits/ and use only Name in CamelCase for filenames. -->
 
 #### Diar Abdlkarim
